@@ -15,3 +15,10 @@ PointData::PointData() {
 PointData::~PointData(){
     dataPoints.clear();
 }
+
+void PointData::createTestData() {
+    for (int i = 0; i < 10; i++) {
+        pointXY p={i*10.0, i*5.0};
+        dataPoints.push_back(p);
+    }
+}

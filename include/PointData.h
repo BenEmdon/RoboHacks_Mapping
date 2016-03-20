@@ -12,18 +12,19 @@
 #include <string>
 
 struct pointXY {
-    int x;
-    int y;
+    double x;
+    double y;
 };
 
 class PointData {
 public:
     PointData();
     ~PointData();
+    void createTestData();
     void readFromFile(std::string);
     std::vector<pointXY> dataPoints;
 private:
-    void addData(int x,int y);
+    void addData(double x,double y);
 };
 
 
