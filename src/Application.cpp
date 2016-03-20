@@ -99,6 +99,5 @@ int Application::startApplication(){
 }
 
 void Application::closeApplication(){
-    IMG_Quit();
     SDL_Quit();
 }
