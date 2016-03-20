@@ -13,6 +13,8 @@
 
 class PointData;
 
+class PointData;
+
 class DrawingBoard {
 public:
     DrawingBoard();
@@ -20,6 +22,7 @@ public:
     void drawLines();
     void drawBoard();
 private:
+    PointData *data;
     void getBounds();
     double maxX;
     double maxY;
