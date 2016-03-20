@@ -29,11 +29,12 @@ void DrawingBoard::drawLines() {
             SDL_RenderDrawLine(gRenderer, plottableData[index].x, plottableData[index].y, plottableData[index+1].x, plottableData[index+1].y);
         }
     }
+    
 }
 
 void DrawingBoard::makeDataPlottable() {
     for(int index = 0; index < data->dataPoints.size(); index++) {
-        pointXYInt p = {static_cast<int>(125 + (fitInBoardX(index)*(800-50))), static_cast<int>(125 + (fitInBoardY(index)*(500-50)))};
+        pointXYInt p = {static_cast<int>(100 + (fitInBoardX(index)*(500))), static_cast<int>(100 + (fitInBoardY(index)*(500)))};
         plottableData.push_back(p);
     }
     

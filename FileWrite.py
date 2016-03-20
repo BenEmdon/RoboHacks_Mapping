@@ -1,5 +1,7 @@
+
+
 def writeListToFile(list ,filename):
-    f = open(filename,'w')
+    f = open(filename,'a')
     stringOfCoordinates = ""
     for coordinate in list:
         for component in coordinate:
@@ -12,5 +14,5 @@ def writeListToFile(list ,filename):
 
 
 if __name__ == '__main__':
-    I = [(100.0,50.2),(20.2,100.3),(100.5,40.1),(0,0)]
+    I = [(1.0,50.2),(2.2,100.3),(1.5,40.1),(0,0)]
     writeListToFile(I, "data/data.txt")
