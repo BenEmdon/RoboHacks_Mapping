@@ -36,7 +36,7 @@ void PointData::readFromFile()
     double x, y;
     
     string line;
-    ifstream infile ("data/data.txt");
+    ifstream infile ("data/data_test.txt");
     
     
     if (infile.is_open())
