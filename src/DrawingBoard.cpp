@@ -11,7 +11,6 @@
 
 DrawingBoard::DrawingBoard() {
     data = new PointData;
-    data->createTestData();
     getBounds();
     makeDataPlottable();
 }

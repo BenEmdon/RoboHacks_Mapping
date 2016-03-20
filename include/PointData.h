@@ -9,8 +9,12 @@
 #ifndef PointData_h
 #define PointData_h
 #include <vector>
+#include <iostream>
+#include <fstream>
 #include <string>
-#include "PointData.h"
+#include <sstream>
+using namespace std;
+using namespace std;
 
 struct pointXY {
     double x;
@@ -22,7 +26,7 @@ public:
     PointData();
     ~PointData();
     void createTestData();
-    void readFromFile(std::string);
+    void readFromFile();
     std::vector<pointXY> dataPoints;
 private:
     void addData(double x,double y);
