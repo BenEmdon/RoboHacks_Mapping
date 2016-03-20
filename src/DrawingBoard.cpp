@@ -33,7 +33,7 @@ void DrawingBoard::drawLines() {
 
 void DrawingBoard::makeDataPlottable() {
     for(int index = 0; index < data->dataPoints.size(); index++) {
-        pointXYInt p = {static_cast<int>(100 + (fitInBoardX(index)*700)), static_cast<int>(100 + (fitInBoardY(index)*400))};
+        pointXYInt p = {static_cast<int>(125 + (fitInBoardX(index)*(800-50))), static_cast<int>(125 + (fitInBoardY(index)*(500-50)))};
         plottableData.push_back(p);
     }
     
@@ -54,6 +54,12 @@ void DrawingBoard::drawBoard() {
     SDL_Rect outLine = {100 , 100, 800, 500};
     // Call to render //
     SDL_RenderDrawRect(gRenderer, &outLine);
+    for (int x = 0; x < 800; x+=50) {
+        SDL_RenderDrawLine(gRenderer, 100 + x, 100, 100 + x, 600);
+    }
+    for (int y = 0; y <= 500; y+=50) {
+        SDL_RenderDrawLine(gRenderer, 100 , 100+ y, 900, 100 + y);
+    }
 }
 
 
