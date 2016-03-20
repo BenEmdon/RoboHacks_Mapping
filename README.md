@@ -1,3 +1,6 @@
+
+![Blueprint](https://github.com/BenEmdon/RoboHacks_Mapping/blob/master/Blueprint.png)
+
 ## Inspiration
 We thought about all the cool things we could have made and this was a project the whole team could get behind. As a team comprised mostly of engineers, the design process is something we know well. Making this lengthy process automated would increase precision and reduce costs of this repetitive analysis.
 
