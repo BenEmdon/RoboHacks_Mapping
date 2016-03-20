@@ -1,4 +1,4 @@
-
+![robohacks](https://github.com/BenEmdon/RoboHacks_Mapping/blob/master/robohacks.jpg)
 ![Blueprint](https://github.com/BenEmdon/RoboHacks_Mapping/blob/master/Blueprint.png)
 
 ## Inspiration
