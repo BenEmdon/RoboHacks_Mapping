@@ -43,7 +43,7 @@ void MappingState::stateUpdate(){
 
 void MappingState::stateRender(){
     Board->drawBoard();
-    
+    Board->drawLines();
 }
 
 bool MappingState::stateExit(){

@@ -10,6 +10,7 @@
 #define PointData_h
 #include <vector>
 #include <string>
+#include "PointData.h"
 
 struct pointXY {
     double x;
