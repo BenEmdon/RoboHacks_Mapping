@@ -11,6 +11,8 @@
 
 #include "Application.h"
 
+class PointData;
+
 class DrawingBoard {
 public:
     DrawingBoard();
@@ -18,6 +20,7 @@ public:
     void drawLines();
     void drawBoard();
 private:
+    void getBounds();
     double maxX;
     double maxY;
 };

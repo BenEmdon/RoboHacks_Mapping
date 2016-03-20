@@ -20,10 +20,7 @@
 #include "ApplicationState.h"
 #include <vector>
 
-struct pointXY {
-    int x;
-    int y;
-};
+
 
 class DrawingBoard;
 
@@ -36,7 +33,6 @@ public:
     void stateUpdate();
     void stateRender();
     bool stateExit();
-    std::vector<pointXY> dataPoints;
 private:
     DrawingBoard *Board;
     bool userQuit;
