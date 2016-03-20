@@ -7,7 +7,6 @@
 //
 
 #include "PointData.h"
-#include "PointData.h"
 #include <assert.h>
 
 
