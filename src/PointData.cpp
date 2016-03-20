@@ -44,7 +44,7 @@ void PointData::createTestData() {
 
 void PointData::readFromFile()
 {
-    int x, y;
+    double x, y;
     
     string line;
     ifstream infile ("data/data.txt");
