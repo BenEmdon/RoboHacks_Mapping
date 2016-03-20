@@ -7,13 +7,16 @@
 //
 
 #include "MappingState.h"
+#include "DrawingBoard.h"
+
 
 MappingState::MappingState() {
     userQuit = false;
+    Board = new DrawingBoard;
 }
 
 MappingState::~MappingState(){
-    
+    delete Board;
 }
 
 void MappingState::stateEnter(){
@@ -39,6 +42,7 @@ void MappingState::stateUpdate(){
 }
 
 void MappingState::stateRender(){
+    Board->drawBoard();
     
 }
 

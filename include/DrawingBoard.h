@@ -15,5 +15,10 @@ class DrawingBoard {
 public:
     DrawingBoard();
     ~DrawingBoard();
+    void drawLines();
+    void drawBoard();
+private:
+    double maxX;
+    double maxY;
 };
 #endif /* DrawingBoard_h */

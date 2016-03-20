@@ -18,6 +18,14 @@
 #endif
 
 #include "ApplicationState.h"
+#include <vector>
+
+struct pointXY {
+    int x;
+    int y;
+};
+
+class DrawingBoard;
 
 class MappingState: public ApplicationState{
 public:
@@ -28,7 +36,9 @@ public:
     void stateUpdate();
     void stateRender();
     bool stateExit();
+    std::vector<pointXY> dataPoints;
 private:
+    DrawingBoard *Board;
     bool userQuit;
 };
 
