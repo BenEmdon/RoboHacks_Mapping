@@ -1,2 +1,0 @@
-rosaria:test
--DCATKIN_DEVEL_PREFIX=/home/jacky/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/jacky/catkin_ws/install
